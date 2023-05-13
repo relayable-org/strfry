@@ -55,7 +55,7 @@ void RelayServer::runWebsocket(ThreadPool<MsgWebsocket>::Thread &thr) {
                 { "pubkey", cfg().relay__info__pubkey },
                 { "contact", cfg().relay__info__contact },
                 { "supported_nips", tao::json::value::array({ 1, 9, 11, 12, 15, 16, 20, 22 }) },
-                { "software", "git+https://github.com/hoytech/strfry.git" },
+                { "software", "git+https://github.com/relayable-org/strfry.git" },
                 { "version", APP_GIT_VERSION },
             })));
             ver = cfg().version();
